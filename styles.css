@@ -1,10 +1,10 @@
 /* Base Styles with Updated Color Palette */
 :root {
-    --primary-color: #521COD;       
-    --secondary-color: #D5451B;   
-    --accent-color: #FF9B45;   
-    --light-color: #FAE7E1;  
-    --dark-color: #521COD;
+    --primary-color: #0248c1;       /* Blue */
+    --secondary-color: #f8d613;     /* Yellow */
+    --accent-color: #111835;        /* Dark Navy */
+    --light-color: #fbfcfc;         /* Off-white */
+    --dark-color: #111835;          /* Dark Navy */
     --success-color: #27ae60;  
     --warning-color: #f39c12; 
 }
@@ -25,7 +25,7 @@ body {
 /* Header Styles */
 header {
     background-color: var(--primary-color);
-    color: #D5451B;
+    color: var(--secondary-color);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--light-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -56,6 +56,7 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a.active {
     background-color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 /* Main Content Styles */
@@ -81,7 +82,7 @@ h2 {
 }
 
 h3 {
-    color: var(--secondary-color);
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 
@@ -89,13 +90,13 @@ h3 {
 .hero {
     text-align: center;
     padding: 3rem 2rem;
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     margin-bottom: 2rem;
 }
 
 .hero h2 {
-    color: white;
+    color: var(--light-color);
     border-bottom: none;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -123,7 +124,7 @@ h3 {
 
 .features article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(210, 69, 27, 0.1);
+    box-shadow: 0 5px 15px rgba(17, 24, 53, 0.1);
 }
 
 /* Disaster Cards */
@@ -145,8 +146,8 @@ h3 {
 }
 
 .disaster-card:hover {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .disaster-card h3 {
@@ -154,7 +155,7 @@ h3 {
 }
 
 .disaster-card:hover h3 {
-    color: white;
+    color: var(--secondary-color);
 }
 
 /* Disaster Detail Section */
@@ -196,8 +197,8 @@ h3 {
 }
 
 button {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
@@ -207,15 +208,16 @@ button {
 }
 
 button:hover {
-    background-color: #b53a16;
-}
-
-#startQuizBtn, #learnMoreBtn {
     background-color: var(--accent-color);
 }
 
+#startQuizBtn, #learnMoreBtn {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
 #startQuizBtn:hover, #learnMoreBtn:hover {
-    background-color: #e68a3e;
+    background-color: #e6c211;
 }
 
 /* Quiz Section */
@@ -238,7 +240,7 @@ button:hover {
 }
 
 .quiz-option:hover {
-    background-color: #f5d5c8;
+    background-color: #f0f0f0;
 }
 
 .quiz-option.correct {
@@ -247,7 +249,7 @@ button:hover {
 }
 
 .quiz-option.incorrect {
-    background-color: var(--secondary-color);
+    background-color: #e74c3c;
     color: white;
 }
 
@@ -256,7 +258,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--light-color);
     margin-top: 2rem;
 }
 
