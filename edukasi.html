@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Kebencanaan - Materi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edukasi Kebencanaan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="edukasi.html" class="active">Edukasi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="education-intro">
+            <h2>Materi Edukasi Kebencanaan</h2>
+            <p>Pilih jenis bencana untuk mempelajari langkah-langkah pencegahan dan penanganannya.</p>
+        </section>
+
+        <section class="disaster-types">
+            <div class="disaster-card" data-disaster="gempa">
+                <h3>Gempa Bumi</h3>
+                <p>Pelajari tindakan sebelum, saat, dan setelah gempa.</p>
+            </div>
+            <div class="disaster-card" data-disaster="banjir">
+                <h3>Banjir</h3>
+                <p>Persiapan menghadapi banjir dan evakuasi.</p>
+            </div>
+            <div class="disaster-card" data-disaster="gunung-api">
+                <h3>Gunung Api</h3>
+                <p>Mengenal tanda-tanda erupsi dan zona bahaya.</p>
+            </div>
+            <div class="disaster-card" data-disaster="tsunami">
+                <h3>Tsunami</h3>
+                <p>Peringatan dini dan evakuasi tsunami.</p>
+            </div>
+        </section>
+
+        <section class="disaster-detail" id="disasterDetail">
+            <h3 id="detailTitle">Pilih jenis bencana untuk melihat detail</h3>
+            <div id="detailContent"></div>
+        </section>
+
+        <section class="quiz-section">
+            <h2>Uji Pengetahuan Anda</h2>
+            <div id="quizContainer"></div>
+            <button id="startQuizBtn">Mulai Kuis</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edukasi Kebencanaan. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

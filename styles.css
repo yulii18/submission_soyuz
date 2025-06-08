@@ -1,0 +1,296 @@
+/* Base Styles with Updated Color Palette */
+:root {
+    --primary-color: #521COD;       
+    --secondary-color: #D5451B;   
+    --accent-color: #FF9B45;   
+    --light-color: #FAE7E1;  
+    --dark-color: #521COD;
+    --success-color: #27ae60;  
+    --warning-color: #f39c12; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: #D5451B;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: var(--secondary-color);
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    color: white;
+    border-bottom: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.features article {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid var(--light-color);
+    transition: transform 0.3s;
+}
+
+.features article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(210, 69, 27, 0.1);
+}
+
+/* Disaster Cards */
+.disaster-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.disaster-card {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid var(--light-color);
+}
+
+.disaster-card:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.disaster-card h3 {
+    transition: color 0.3s;
+}
+
+.disaster-card:hover h3 {
+    color: white;
+}
+
+/* Disaster Detail Section */
+.disaster-detail {
+    padding: 2rem;
+    background-color: white;
+    border-left: 4px solid var(--secondary-color);
+}
+
+#detailContent {
+    margin-top: 1rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    font-family: inherit;
+    background-color: white;
+}
+
+.form-group textarea {
+    min-height: 120px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b53a16;
+}
+
+#startQuizBtn, #learnMoreBtn {
+    background-color: var(--accent-color);
+}
+
+#startQuizBtn:hover, #learnMoreBtn:hover {
+    background-color: #e68a3e;
+}
+
+/* Quiz Section */
+.quiz-question {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--light-color);
+}
+
+.quiz-option {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid var(--light-color);
+}
+
+.quiz-option:hover {
+    background-color: #f5d5c8;
+}
+
+.quiz-option.correct {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.quiz-option.incorrect {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    .features, .disaster-types {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+}

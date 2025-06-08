@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Kebencanaan - Kontak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edukasi Kebencanaan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="edukasi.html">Edukasi</a></li>
+                <li><a href="kontak.html" class="active">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Hubungi Kami</h2>
+            <p>Jika Anda memiliki pertanyaan atau ingin melaporkan kejadian bencana, silakan hubungi:</p>
+            
+            <address>
+                <p>Email: <a href="mailto:info@edukasikebencanaan.id">info@edukasikebencanaan.id</a></p>
+                <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
+                <p>Alamat: Jl. Kesiapsiagaan No. 1, Jakarta</p>
+            </address>
+        </section>
+
+        <section class="emergency-contacts">
+            <h2>Nomor Darurat</h2>
+            <ul id="emergencyList"></ul>
+        </section>
+
+        <section class="report-form">
+            <h2>Laporan Bencana</h2>
+            <form id="disasterReportForm">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="disasterType">Jenis Bencana:</label>
+                    <select id="disasterType" name="disasterType" required>
+                        <option value="">Pilih Jenis Bencana</option>
+                        <option value="gempa">Gempa Bumi</option>
+                        <option value="banjir">Banjir</option>
+                        <option value="gunung-api">Gunung Api</option>
+                        <option value="tsunami">Tsunami</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Lokasi:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Deskripsi:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <button type="submit">Kirim Laporan</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edukasi Kebencanaan. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
