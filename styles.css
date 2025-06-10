@@ -1,12 +1,10 @@
 /* Base Styles with Updated Color Palette */
 :root {
-    --primary-color: #0248c1;       /* Blue */
-    --secondary-color: #f8d613;     /* Yellow */
-    --accent-color: #111835;        /* Dark Navy */
-    --light-color: #fbfcfc;         /* Off-white */
-    --dark-color: #111835;          /* Dark Navy */
-    --success-color: #27ae60;  
-    --warning-color: #f39c12; 
+    --primary-color: #0248c1;      
+    --secondary-color: #f8d613;     
+    --light-color: #fbfcfc;         
+    --dark-color: #111835;          
+    --last-color: #f39c12; 
 }
 
 * {
@@ -82,7 +80,7 @@ h2 {
 }
 
 h3 {
-    color: var(--accent-color);
+    color: var(--dark-color);
     margin-bottom: 0.5rem;
 }
 
@@ -110,7 +108,6 @@ section.news {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/*Picture in News Section */
 /* News Section Styles */
 .news-list {
     list-style: none;
@@ -167,7 +164,7 @@ section.news {
 
 .read-more:hover {
     text-decoration: underline;
-    color: var(--warning-color);
+    color: var(--last-color);
 }
 
 /* Hero Section */
@@ -199,16 +196,100 @@ section.news {
 }
 
 .features article {
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
     background-color: white;
-    border: 1px solid var(--light-color);
-    transition: transform 0.3s;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.features article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .features article:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(17, 24, 53, 0.1);
+}
+
+.features article:hover::before {
+    transform: scaleX(1);
+}
+.feature-icon i {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.features article:hover .feature-icon {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.features article:hover .feature-icon i {
+    color: var(--secondary-color);
+}
+
+.features h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.features h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.features p {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.7;
+}
+ .read-more {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(2, 72, 193, 0.2);
+}
+
+.read-more:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(2, 72, 193, 0.25);
 }
 
 /* Disaster Cards */
@@ -266,7 +347,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--dark-color);
 }
 
 #startQuizBtn, #learnMoreBtn {

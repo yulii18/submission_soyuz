@@ -153,75 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.backgroundColor = '#e3f2fd';
             });
         });
-
-        // Quiz Functionality
-        const quizContainer = document.getElementById('quizContainer');
-        const startQuizBtn = document.getElementById('startQuizBtn');
-        
-        const quizQuestions = [
-            {
-                question: "Apa yang harus dilakukan saat terjadi gempa bumi jika Anda berada di dalam gedung?",
-                options: [
-                    "Lari keluar gedung",
-                    "Berlindung di bawah meja yang kuat",
-                    "Berdiri di tengah ruangan",
-                    "Menggunakan lift untuk keluar"
-                ],
-                answer: 1
-            },
-            {
-                question: "Tanda alam apa yang bisa menunjukkan datangnya tsunami?",
-                options: [
-                    "Air laut yang surut tiba-tiba",
-                    "Langit yang mendung",
-                    "Angin kencang",
-                    "Hujan deras"
-                ],
-                answer: 0
-            },
-            {
-                question: "Apa yang harus dimasukkan dalam tas darurat bencana?",
-                options: [
-                    "Makanan dan air untuk 3 hari",
-                    "Perhiasan berharga",
-                    "Barang elektronik",
-                    "Semua jawaban benar"
-                ],
-                answer: 0
-            }
-        ];
-
-        startQuizBtn.addEventListener('click', function() {
-            quizContainer.innerHTML = '<h3>Kuis Pengetahuan Kebencanaan</h3>';
-            
-            quizQuestions.forEach((q, qIndex) => {
-                const questionDiv = document.createElement('div');
-                questionDiv.className = 'quiz-question';
-                questionDiv.innerHTML = `<h4>${qIndex + 1}. ${q.question}</h4>`;
-                
-                q.options.forEach((option, oIndex) => {
-                    const optionDiv = document.createElement('div');
-                    optionDiv.className = 'quiz-option';
-                    optionDiv.textContent = option;
-                    optionDiv.addEventListener('click', function() {
-                        if (oIndex === q.answer) {
-                            this.style.backgroundColor = 'var(--success-color)';
-                            this.style.color = 'white';
-                        } else {
-                            this.style.backgroundColor = 'var(--accent-color)';
-                            this.style.color = 'white';
-                        }
-                    });
-                    questionDiv.appendChild(optionDiv);
-                });
-                
-                quizContainer.appendChild(questionDiv);
-            });
-            
-            startQuizBtn.style.display = 'none';
-        });
     }
-
     // Contact Page Functionality
     if (currentPage === 'siaga.html') {
         const emergencyList = document.getElementById('emergencyList');
@@ -265,3 +197,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
