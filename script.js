@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     // Contact Page Functionality
-    if (currentPage === 'kontak.html') {
+    if (currentPage === 'siaga.html') {
         const emergencyList = document.getElementById('emergencyList');
         const emergencyContacts = [
             { name: 'BNPB (Badan Nasional Penanggulangan Bencana)', number: '117' },
