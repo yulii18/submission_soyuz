@@ -40,7 +40,7 @@
         <section class="kategori-tas" style="background: #f9f9f9; padding: 2rem; border-left: 5px solid #111835;">
             <h2 style="color: #2c3e50;">Isi Tas Siaga Bencana</h2>
             <div class="categories-grid">
-                <article class="card" onclick="showDetail('medis')">
+                <article class="card" data-category= "medis" onclick="showDetail('medis')">
                     <div class="item-container">
                         <img src="picture/medis.svg" alt="Kebutuhan Medis" class="item-image">
                         <div class="item-text">
@@ -50,7 +50,7 @@
                     </div>
                 </article>
 
-                <article class="card" onclick="showDetail('makanan')">
+                <article class="card" data-category= "makanan" onclick="showDetail('makanan')">
                     <div class="item-container">
                         <img src="picture/makanan.svg" alt="Kebutuhan makanan" class="item-image">
                         <div class="item-text">
@@ -60,7 +60,7 @@
                     </div>
                 </article>
 
-                <article class="card" onclick="showDetail('dokumen')">
+                <article class="card" data-category= "dokumen" onclick="showDetail('dokumen')">
                     <div class="item-container">
                         <img src="picture/dokumen.svg" alt="Dokumen Penting" class="item-image">
                         <div class="item-text">
@@ -70,7 +70,7 @@
                     </div>
                 </article>
 
-                <article class="card" onclick="showDetail('Perlengkapan-teknis')">
+                <article class="card" data-category= "perlengkapanTeknis" onclick="showDetail('perlengkapanTeknis')">
                     <div class="item-container">
                         <img src="picture/logistik.svg" alt="Perlengkapan teknis" class="item-image">
                         <div class="item-text">
@@ -80,7 +80,7 @@
                     </div>
                 </article>
 
-                <article class="card" onclick="showDetail('Perlindungan-diri')">
+                <article class="card" data-category= "perlindunganDiri" onclick="showDetail('perlindunganDiri')">
                     <div class="item-container">
                         <img src="picture/perlengkapan.svg" alt="Perlindungan Diri" class="item-image">
                         <div class="item-text">
@@ -90,7 +90,7 @@
                     </div>
                 </article>
 
-                <article class="card" onclick="showDetail('Alat-komunikasi')">
+                <article class="card" data-category= "alatKomunikasi" onclick="showDetail('alatKomunikasi')">
                     <div class="item-container">
                         <img src="picture/komunikasi.svg" alt="Alat komunikasi" class="item-image">
                         <div class="item-text">
@@ -100,7 +100,7 @@
                     </div>
                 </article>
 
-                <article class="card" onclick="showDetail('sanitari')">
+                <article class="card" data-category= "sanitari" onclick="showDetail('sanitari')">
                     <div class="item-container">
                         <img src="picture/sanitari.svg" alt="Kebutuhan Sanitari" class="item-image">
                         <div class="item-text">
@@ -111,12 +111,21 @@
                 </article>
             </div>
         </section>
-        <section id="detailBox" class="detail-box"></section>
-    </main>
+        <!-- <section id="detailBox" class="detail-box"></section> -->
 
+    </main>
+    
     <footer>
         <p>&copy; 2025 Disaster Edu. Semua hak dilindungi.</p>
     </footer>
+    <section id="detailModal" class="modal" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-content"> 
+        <button class="close-modal" aria-label="Tutup modal">&times;</button>
+        <h2 id="modalTitle" class="modal-title">Judul Modal</h2> 
+        <ul class="modal-list" id="modalContent">
+        </ul>
+    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
