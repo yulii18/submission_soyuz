@@ -9,8 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         }
     });
-
+    
     // Home Page Functionality
+    const learnMoreBtn = document.getElementById('learnMoreBtn');
+    if (learnMoreBtn) { // Periksa apakah elemen ada
+    learnMoreBtn.addEventListener('click', function() {
+        window.location.href = 'edukasi.html';
+    });
+    }
     if (currentPage === 'index.html' || currentPage === '') {
         // Load news dynamically
         const newsContainer = document.getElementById('newsContainer');
@@ -33,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Learn More Button
-        const learnMoreBtn = document.getElementById('learnMoreBtn');
         learnMoreBtn.addEventListener('click', function() {
             window.location.href = 'edukasi.html';
         });
