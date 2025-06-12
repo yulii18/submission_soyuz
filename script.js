@@ -216,3 +216,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Tas siaga
+const tasSiagaDetails = {
+    medis: ["Obat-obatan", "Masker N95", "Hand sanitizer", "Alat P3K"],
+    makanan: ["Makanan kaleng", "Biskuit", "Air mineral", "Makanan instan"],
+    dokumen: ["KTP", "KK", "Buku tabungan", "Kontak Darurat", "Dokumen penting lainnya"],
+    perlengkapanTeknis: ["Senter & baterai cadangan", "Power bank", "Selimut darurat", "lighter", "Tali parasut"],
+    perlindunganDiri: ["Jas hujan ponco", "Topi pelindung", "Kacamata pelindung", "Sarung tangan", "pakaian ganti"],
+    alatKomunikasi: ["Radio AM/FM", "Handphone & charger", "Walkie-talkie", "Baterai cadangan"],
+    sanitari: ["Sabun antiseptik", "Tisu basah", "Pembalut wanita", "Sampah plastik"],
+
+};
+
+function showDetail(category) {
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay active';
+  
+  modal.innerHTML = `
+    <div class="modal-content">
+      <h3>${category.toUpperCase()}</h3>
+      <ul>
+        ${tasSiagaDetails[category].map(item => `<li>${item}</li>`).join('')}
+      </ul>
+      <button class="close-btn">Tutup</button>
+    </div>
+  `;
+
+  modal.querySelector('.close-btn').onclick = () => {
+    modal.classList.remove('active');
+    setTimeout(() => modal.remove(), 300); 
+  };
+
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      setTimeout(() => modal.remove(), 300);
+    }
+  };
+
+  document.body.appendChild(modal);
+}
