@@ -75,6 +75,7 @@ nav ul li a {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s;
+    font-weight: 600;
 }
 
 nav ul li a:hover,
@@ -150,7 +151,7 @@ button:hover {
     padding: 0.75rem 1.5rem;
     border-radius: 30px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 530;
     transition: all 0.3s ease;
     border: 2px solid var(--secondary-color);
 }
@@ -391,6 +392,42 @@ button:hover {
     padding: 2rem;
     background-color: white;
     border-left: 4px solid var(--secondary-color);
+}
+
+.disaster {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.disaster-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.disaster-list li {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid var(--light-color);
+}
+
+.disaster-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.disaster-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
 }
 
 #detailContent {

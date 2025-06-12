@@ -44,13 +44,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Education Page Functionality
+    // EDUKASI PAGE //
     if (currentPage === 'edukasi.html') {
         const disasterCards = document.querySelectorAll('.disaster-card');
         const detailTitle = document.getElementById('detailTitle');
         const detailContent = document.getElementById('detailContent');
         
         const disasterInfo = {
+            'bencana-alam': {
+                title: 'Bencana Alam',
+                content: `
+                    <h4>Jenis Bencana Alam:</h4>
+                    <div class="disaster">
+                    <ul class="disaster-list">
+                        <li> <img src="picture/bencana dunia (1).png"> Gempa Bumi</li>
+                        <li>Banjir</li>
+                        <li>Gunung Api</li>
+                        <li>Tsunami</li>
+                    </ul>
+                    </div>
+                `
+            },
             gempa: {
                 title: 'Gempa Bumi',
                 content: `
@@ -202,4 +216,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
