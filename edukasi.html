@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disaster Edu- Materi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_edu.css" />
+  </head>
+  <body>
     <header>
-        <h1>Disaster Edu</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="edukasi.html" class="active">Edukasi</a></li>
-                <li><a href="siaga.html">Siaga</a></li>
-            </ul>
-        </nav>
+      <h1>Disaster Edu</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="edukasi.html" class="active">Edukasi</a></li>
+          <li><a href="siaga.html">Siaga</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="education-intro">
-            <h2>Materi Edukasi Kebencanaan</h2>
-            <p>Pilih jenis bencana untuk mempelajari langkah-langkah pencegahan dan penanganannya.</p>
-        </section>
+      <section class="education">
+        <div class="education-content">
+          <header class="education-header">
+            <h1>Kesiapsiagaan Bencana</h1>
+            <p>
+              <strong>Kesiapsiagaan</strong> adalah upaya-upaya yang
+              memungkinkan masyarakat (individu, keluarga, kelompok, organisasi)
+              dapat mengantisipasi bahaya peristiwa alam, melalui pembentukan
+              struktur dan mekanisme tanggap darurat yang sistematis serta
+              membangun sistem peringatan dini.
+            </p>
+          </header>
+          <div class="education-img">
+            <img src="picture/siap_siaga.png" alt="" class="siap-siaga" />
+          </div>
+        </div>
+      </section>
+      <section class="disaster-types-container">
+        <div class="education-header">
+          <h2>Materi Edukasi Kebencanaan</h2>
+          <p>
+            Pilih jenis bencana untuk mempelajari langkah-langkah pencegahan dan
+            penanganannya.
+          </p>
+        </div>
 
-        <section class="disaster-types">
-            <div class="disaster-card" data-disaster="bencana-alam">
-                <h3>Bencana Alam</h3>
-                <p>Bencana alam adalah peristiwa yang disebabkan oleh alam yang mengakibatkan kerusakan, kerugian, atau ancaman terhadap kehidupan manusia.</p>
-            </div>
-            <div class="disaster-card" data-disaster="bencana-nonalam">
-                <h3>Bencana Non Alam</h3>
-                <p>Persiapan menghadapi banjir dan evakuasi.</p>
-            </div>
-            <div class="disaster-card" data-disaster="bencana-sosial">
-                <h3>Bencana Sosial</h3>
-                <p>Mengenal tanda-tanda erupsi dan zona bahaya.</p>
-            </div>
-        </section>
+        <div class="disaster-types">
+          <div class="disaster-card" data-disaster="bencanaAlam">
+            <h3>Bencana Alam</h3>
+            <p>
+              Bencana alam adalah peristiwa yang disebabkan oleh alam yang
+              mengakibatkan kerusakan, kerugian, atau ancaman terhadap kehidupan
+              manusia.
+            </p>
+          </div>
+          <div class="disaster-card" data-disaster="bencanaNonAlam">
+            <h3>Bencana Non Alam</h3>
+            <p>Persiapan menghadapi banjir dan evakuasi.</p>
+          </div>
+          <div class="disaster-card" data-disaster="bencanaSosial">
+            <h3>Bencana Sosial</h3>
+            <p>Mengenal tanda-tanda erupsi dan zona bahaya.</p>
+          </div>
+        </div>
+      </section>
 
-        <section class="disaster-detail" id="disasterDetail">
-            <h3 id="detailTitle">Pilih jenis bencana untuk melihat detail</h3>
-            <div id="detailContent"></div>
-        </section>
+      <section class="disaster-detail" id="disasterDetail">
+        <h1 id="detailTitle">Pilih jenis bencana untuk melihat detail</h1>
+        <div id="detailContent"></div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Edukasi Kebencanaan. Semua hak dilindungi.</p>
+      <p>&copy; 2025 Edukasi Kebencanaan. Semua hak dilindungi.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
