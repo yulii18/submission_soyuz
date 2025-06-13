@@ -70,12 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <ul class="disaster-list">
                     <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/gempa_bumi.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
                         <h3>Gempa Bumi</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <p>Gempa Bumi adalah peristiwa getaran di permukaan bumi akibat pelepasan energi di dalam bumi (biasanya dari patahan/lapisan batuan) karena pergeseran lempeng tektonik. Getaran ini dapat merusak bangunan dan membahayakan keselamatan.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button" onclick="moveToBencanaAlam('gempa_bumi')">Lihat Detail</button>
@@ -83,12 +83,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/gunung_meletus.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Gunung Meletus</h3>
+                        <p>Gunung Meletus adalah letusan magma dan abu akibat dorongan gas bertekanan tinggi dari perut bumi yang keluar melalui kawah gunung api. Dapat menimbulkan dampak seperti hujan abu, aliran lava, dan awan panas yang dapat membahayakan manusia dan lingkungan.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/angin_topan.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Angin Topan</h3>
+                        <p>Angin Topan adalah siklon tropis yang berkecepatan tinggi disertai hujan deras, angin kencang, dan tekanan rendah, mampu menyebabkan kerusakan hebat pada bangunan, infrastruktur, dan pepohonan.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -109,12 +109,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/kekeringan.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Kekeringan</h3>
+                        <p>Kekeringan adalah kondisi kekurangan air akibat kemarau berkepanjangan hingga berdampak pada petani, ketersediaan air minum, dan mengancam ekosistem serta mata pencaharian masyarakat, terutama pedesaan.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -122,12 +122,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/tsunami.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Tsunami</h3>
+                        <p>Tsunami adalah gelombang raksasa di laut akibat gempa bawah laut, letusan gunung api, atau longsor bawah laut. Saat mencapai daratan, gelombang tsunami akan membesar dan menghantam masyarakat pesisir dengan destruktif.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -135,12 +135,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/longsor.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Tanah Longsor</h3>
+                        <p>Tanah Longsor adalah pergerakan massa tanah/kerikil/gunung yang menuruni lereng dalam jumlah besar secara tiba-tiba atau berangsur-angsur akibat hujan lebat, gempa, atau erosi.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -148,19 +148,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/banjir.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Banjir</h3>
+                        <p>Banjir adalah meluapnya air sungai, danau, laut, atau saluran ke permukiman melebihi batas normal akibat hujan lebat, meluapnya badan air, atau sungai tersumbat. Banjir dapat merusak rumah, mencemari air bersih, dan menimbulkan risiko kesehatan.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
                         </div>
                     </li>
                     </ul>
-
                 `,
       },
       bencanaNonAlam: {
@@ -169,12 +168,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <ul class="disaster-list">
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/gagal_tekno.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Kegagalan Teknologi</h3>
+                        <p>Kegagalan Teknologi adalah bencana yang timbul akibat kesalahan desain, pengoperasian, kelalaian, atau unsur disengaja dalam penggunaan teknologi atau industri. Meliputi kecelakaan industri (seperti tumpahan bahan kimia, ledakan pabrik), kecelakaan transportasi (di darat, laut, atau udara), hingga kegagalan sistem teknologi lainnya seperti ledakan reaktor atau kebocoran gas</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -182,12 +181,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/wabah.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Wabah Penyakit</h3>
+                        <p>Wabah Penyakit adalah kejadian meningkatnya kasus penyakit menular secara signifikan dalam waktu dan wilayah tertentu. Epidemik menyebar cepat di kota atau provinsi, sedangkan pandemi meluas hingga melintasi negara. Contohnya termasuk flu burung (H5N1), demam berdarah, ebola, dan COVID‑19</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -195,12 +194,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/kebakaran.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Kebakaran</h3>
+                        <p>Kebakaran adalah peristiwa berkobarnya api yang melebihi batas normal yang dapat menimbulkan kerusakan atau kerugian, baik pada bangunan di pemukiman, pabrik, pasar, gedung, maupun kebakaran hutan dan lahan.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -208,12 +207,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/tabrakan.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Kecelakaan</h3>
+                        <p>Kecelakaan adalah kejadian tak terduga pada moda transportasi atau industri, sering disebabkan oleh kealpaan/kelemahan sistem dan human error yang dapat menyebabkan cedera atau kematian.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -228,12 +227,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <ul class="disaster-list">
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/konflik.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Konflik Sosial</h3>
+                        <p>Konflik Sosial adalah peristiwa kekerasan atau ketegangan antar individu, kelompok masyarakat, suku, agama, atau ras yang menimbulkan kerugian besar, baik fisik, psikologis, maupun material.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -241,12 +240,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                      <li>
                         <img
-                        src="picture/bencana_dunia.png"
+                        src="picture/teror.png"
                         alt="Fitur 1"
                         />
                         <div class="content">
-                        <h3>Desain Responsif</h3>
-                        <p>Tampilan yang menyesuaikan dengan semua perangkat</p>
+                        <h3>Terorisme</h3>
+                        <p>Terorisme adalah tindakan kekerasan yang disengaja dan bersifat sistematis, dilakukan oleh kelompok atau individu untuk menciptakan ketakutan (teror) demi tujuan ideologis, politik, atau agama.</p>
                         </div>
                         <div class="disaster-btn">
                         <button class="button">Lihat Detail</button>
@@ -268,50 +267,6 @@ document.addEventListener("DOMContentLoaded", function () {
         disasterCards.forEach((c) => (c.style.backgroundColor = ""));
         this.style.backgroundColor = "var(--overlay-color)"; // Highlight color
       });
-    });
-  }
-
-  // Contact Page Functionality
-  if (currentPage === "siaga.html") {
-    const emergencyList = document.getElementById("emergencyList");
-    const emergencyContacts = [
-      { name: "BNPB (Badan Nasional Penanggulangan Bencana)", number: "117" },
-      { name: "Basarnas (Pencarian dan Pertolongan)", number: "115" },
-      { name: "Polisi", number: "110" },
-      { name: "Ambulans", number: "118/119" },
-      { name: "Pemadam Kebakaran", number: "113" },
-    ];
-
-    emergencyContacts.forEach((contact) => {
-      const li = document.createElement("li");
-      li.innerHTML = `<strong>${contact.name}:</strong> ${contact.number}`;
-      emergencyList.appendChild(li);
-    });
-
-    // Form Submission
-    const reportForm = document.getElementById("disasterReportForm");
-    const formMessage = document.getElementById("formMessage");
-
-    reportForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // Simulate form submission
-      formMessage.textContent =
-        "Laporan Anda telah diterima. Terima kasih atas kontribusinya.";
-      formMessage.style.color = "var(--success-color)";
-      formMessage.style.padding = "1rem";
-      formMessage.style.marginTop = "1rem";
-      formMessage.style.borderRadius = "4px";
-      formMessage.style.backgroundColor = "#e8f5e9";
-
-      // Reset form
-      reportForm.reset();
-
-      // Hide message after 5 seconds
-      setTimeout(() => {
-        formMessage.textContent = "";
-        formMessage.style.padding = "0";
-      }, 5000);
     });
   }
 });

@@ -9,10 +9,9 @@
 
   /* Border */
   --border-color: rgba(0, 0, 0, 0.5);
-  --border-color-hover: rgba(0,0,0,0.8);
+  --border-color-hover: rgba(0, 0, 0, 0.8);
 
-  --overlay-color: rgba(2, 72, 193,0.2);
-
+  --overlay-color: rgba(2, 72, 193, 0.2);
 }
 
 * {
@@ -38,6 +37,20 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 
 header h1 {
   margin-bottom: 0.5rem;
@@ -47,6 +60,7 @@ main {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 6rem;
 }
 
 section {
@@ -519,8 +533,12 @@ section.modal {
   border-bottom: 2px solid #f1f1f1;
 }
 
-/* === RESPONSIVE === */
+/* === RESPONSIVE DISPLAY=== */
 @media (max-width: 768px) {
+  main {
+    padding: 2rem;
+    margin-top: 8rem;
+  }
   .kategori-tas {
     padding: 3rem 1rem;
   }
@@ -529,15 +547,10 @@ section.modal {
     padding: 1.5rem;
     padding-bottom: 2rem;
   }
-}
-
-/* ===RESPONSIVE DESIGN=== */
-@media (max-width: 768px) {
   header {
     flex-direction: column;
     text-align: center;
   }
-
   nav ul {
     margin-top: 1rem;
     justify-content: center;
@@ -565,7 +578,8 @@ section.modal {
 
 @media (max-width: 480px) {
   main {
-    padding: 1rem;
+    padding: 2rem;
+    margin-top: 8rem;
   }
 
   section {

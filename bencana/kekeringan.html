@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kekeringan - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_edu.css">
+</head>
+<body>
+    <header class="header-nav">
+        <h1>Disaster Edu</h1>
+        <nav>
+            <button class="nav-back-btn" onclick="goBack()">
+                <span>Kembali</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="disaster-header">
+                <div class="disaster-icon">🏜️</div>
+                <h1>Kekeringan</h1>
+                <p class="disaster-subtitle">Kekeringan adalah kondisi kekurangan air yang berkepanjangan akibat curah hujan di bawah normal. Dampaknya meliputi gagal panen, kelangkaan air minum, kebakaran hutan, dan gangguan ekosistem.</p>
+            </section>
+
+            <section class="disaster-types-container">
+                <div class="education-header">
+                    <h2>Jenis Kekeringan</h2>
+                </div>
+                <div class="disaster-types">
+                    <div class="disaster-card">
+                        <h3>Kekeringan Meteorologis</h3>
+                        <img src="picture/kekeringan1.png" alt="Kekeringan Meteorologis" class="item-image">
+                        <p>Terjadi ketika curah hujan di suatu daerah jauh di bawah normal dalam periode tertentu. Tahap awal dari semua jenis kekeringan.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kekeringan Pertanian</h3>
+                        <p>Kondisi dimana kandungan air di tanah tidak mencukupi kebutuhan tanaman, menyebabkan gagal panen dan kerugian ekonomi.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kekeringan Hidrologis</h3>
+                        <p>Terjadi ketika pasokan air di permukaan (sungai, danau) dan air tanah berada di bawah level normal untuk jangka panjang.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disaster-content">
+                <div class="content-card warning">
+                    <h2>⚠️ Tanda-tanda Peringatan</h2>
+                    <ul>
+                        <li>Curah hujan di bawah normal selama beberapa bulan</li>
+                        <li>Permukaan air sumur dan sungai menurun drastis</li>
+                        <li>Tanah retak-retak dan tanaman layu</li>
+                        <li>Kualitas air menurun (keruh atau asin)</li>
+                        <li>Peningkatan suhu udara berkepanjangan</li>
+                        <li>Kebakaran hutan lebih sering terjadi</li>
+                    </ul>
+                </div>
+
+                <div class="content-card info">
+                    <h2>📋 Persiapan Menghadapi Kekeringan</h2>
+                    <ul>
+                        <li>Bangun sistem penampungan air hujan</li>
+                        <li>Lakukan penghematan air dalam kegiatan sehari-hari</li>
+                        <li>Gunakan tanaman yang tahan kekeringan</li>
+                        <li>Buat sumur resapan untuk mengisi air tanah</li>
+                        <li>Siapkan cadangan air bersih untuk kebutuhan darurat</li>
+                        <li>Lakukan daur ulang air (greywater system)</li>
+                        <li>Pantau informasi cuaca dan peringatan kekeringan</li>
+                    </ul>
+                </div>
+
+                <div class="content-card danger">
+                    <h2>🛡️ Yang Harus Dilakukan Saat Kekeringan</h2>
+                    <div class="emergency-steps">
+                        <div class="step">
+                            <h3>Konservasi Air:</h3>
+                            <ul>
+                                <li>Gunakan air seperlunya dengan bijak</li>
+                                <li>Perbaiki kebocoran pipa dan keran air</li>
+                                <li>Siram tanaman di pagi atau sore hari untuk mengurangi penguapan</li>
+                                <li>Gunakan air bekas cucian untuk menyiram tanaman</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h3>Penanganan Kesehatan:</h3>
+                            <ul>
+                                <li>Rebus air minum jika kualitas air menurun</li>
+                                <li>Jaga kebersihan untuk mencegah penyakit</li>
+                                <li>Waspada dehidrasi dan heat stroke</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card success">
+                    <h2>🚑 Pemulihan Pasca Kekeringan</h2>
+                    <ul>
+                        <li>Evaluasi sumber daya air yang tersisa</li>
+                        <li>Perbaiki infrastruktur air yang rusak</li>
+                        <li>Lakukan penghijauan dengan tanaman tahan kering</li>
+                        <li>Buat sistem peringatan dini kekeringan</li>
+                        <li>Kembangkan sumber air alternatif (air hujan, desalinasi)</li>
+                        <li>Edukasi masyarakat tentang konservasi air</li>
+                        <li>Buat rencana jangka panjang untuk ketahanan air</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "../edukasi.html";
+        }
+    </script>
+</body>
+</html>

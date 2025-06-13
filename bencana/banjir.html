@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banjir - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_edu.css">
+</head>
+<body>
+    <header class="header-nav">
+        <h1>Disaster Edu</h1>
+        <nav>
+            <button class="nav-back-btn" onclick="goBack()">
+                <span>Kembali</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="disaster-header">
+                <div class="disaster-icon">🌧️</div>
+                <h1>Banjir</h1>
+                <p class="disaster-subtitle">Banjir adalah kondisi dimana air menutupi tanah yang biasanya kering, disebabkan oleh hujan berlebihan, bendungan jebol, atau pasang laut tinggi. Dapat terjadi secara perlahan atau tiba-tiba (banjir bandang), menyebabkan kerusakan properti dan korban jiwa.</p>
+            </section>
+
+            <section class="disaster-types-container">
+                <div class="education-header">
+                    <h2>Jenis Banjir</h2>
+                </div>
+                <div class="disaster-types">
+                    <div class="disaster-card">
+                        <h3>Banjir Bandang</h3>
+                        <img src="picture/banjir1.png" alt="Banjir Bandang" class="item-image">
+                        <p>Terjadi tiba-tiba dengan air bergerak cepat membawa puing-puing, sangat berbahaya dan merusak. Sering terjadi di daerah pegunungan setelah hujan deras.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Banjir Sungai</h3>
+                        <p>Terjadi ketika sungai meluap akibat hujan berkepanjangan atau pencairan salju, biasanya dapat diprediksi beberapa hari sebelumnya.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Banjir Rob</h3>
+                        <p>Genangan air laut ke daratan akibat pasang tinggi, angin kencang, atau penurunan permukaan tanah. Sering terjadi di kota pesisir.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disaster-content">
+                <div class="content-card warning">
+                    <h2>⚠️ Tanda-tanda Peringatan</h2>
+                    <ul>
+                        <li>Hujan lebat berkepanjangan</li>
+                        <li>Air sungai naik dengan cepat dan berwarna keruh</li>
+                        <li>Peringatan resmi dari BMKG atau BPBD</li>
+                        <li>Bau tanah yang kuat dari air yang mengalir</li>
+                        <li>Suara gemuruh dari arah hulu sungai</li>
+                        <li>Listrik padam tiba-tiba saat hujan deras</li>
+                    </ul>
+                </div>
+
+                <div class="content-card info">
+                    <h2>📋 Persiapan Menghadapi Banjir</h2>
+                    <ul>
+                        <li>Ketahui tingkat kerentanan rumah terhadap banjir</li>
+                        <li>Siapkan tas darurat berisi makanan, air, obat-obatan, senter, dan dokumen penting</li>
+                        <li>Amankan peralatan listrik dan barang berharga di tempat tinggi</li>
+                        <li>Pasang pompa air dan penghalang banjir jika memungkinkan</li>
+                        <li>Kenali rute evakuasi terdekat</li>
+                        <li>Buat rencana komunikasi keluarga jika terpisah</li>
+                    </ul>
+                </div>
+
+                <div class="content-card danger">
+                    <h2>🛡️ Yang Harus Dilakukan Saat Banjir</h2>
+                    <div class="emergency-steps">
+                        <div class="step">
+                            <h3>Jika Masih Ada Waktu:</h3>
+                            <ul>
+                                <li>Matikan listrik dan gas</li>
+                                <li>Pindahkan barang berharga ke tempat tinggi</li>
+                                <li>Evakuasi sesuai rute yang aman</li>
+                                <li>Jangan berkendara melalui genangan air</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h3>Jika Terjebak Banjir:</h3>
+                            <ul>
+                                <li>Naik ke lantai atas atau atap rumah</li>
+                                <li>Bawa alat komunikasi dan senter</li>
+                                <li>Hindari air yang bergerak cepat</li>
+                                <li>Jika terseret air, cari benda mengapung untuk berpegangan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card success">
+                    <h2>🚑 Setelah Banjir Surut</h2>
+                    <ul>
+                        <li>Kembali ke rumah hanya ketika dinyatakan aman</li>
+                        <li>Waspada binatang berbahaya seperti ular atau tikus</li>
+                        <li>Bersihkan rumah dengan perlindungan yang memadai</li>
+                        <li>Rebus air minum sampai dinyatakan aman</li>
+                        <li>Periksa kerusakan struktural sebelum memasuki bangunan</li>
+                        <li>Dokumentasikan kerusakan untuk klaim asuransi</li>
+                        <li>Dapatkan bantuan medis jika diperlukan</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "../edukasi.html";
+        }
+    </script>
+</body>
+</html>

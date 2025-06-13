@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunung Meletus - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles_edu.css" />
+  </head>
+  <body>
+    <header class="header-nav">
+      <h1>Disaster Edu</h1>
+      <nav>
+        <button class="nav-back-btn" onclick="goBack()">
+          <span>Kembali</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <!-- Header Section -->
+        <section class="disaster-header">
+          <div class="disaster-icon">🌋</div>
+          <h1>Gunung Meletus</h1>
+          <p class="disaster-subtitle">Gunung Meletus adalah letusan magma dan abu akibat dorongan gas bertekanan tinggi dari perut bumi yang keluar melalui kawah gunung api. Dapat menimbulkan dampak seperti hujan abu, aliran lava, dan awan panas yang dapat membahayakan manusia dan lingkungan.</p>
+        </section>
+
+        <section class="disaster-types-container">
+          <div class="education-header">
+            <h2>Jenis-Jenis Letusan Gunung</h2>
+          </div>
+          <div class="disaster-types">
+            <div class="disaster-card" data-disaster="letusanEksplosif">
+              <h3>Letusan Eksplosif</h3>
+              <img src="picture/eksplosif.png" alt="Letusan Eksplosif" class="item-image">
+              <p>Letusan yang sangat kuat dengan semburan material vulkanik tinggi ke atmosfer. Terjadi ketika magma kaya silika dan gas tidak bisa keluar dengan mudah, menyebabkan tekanan tinggi yang akhirnya meledak. Contoh: Letusan Gunung Krakatau.</p>
+            </div>
+            <div class="disaster-card" data-disaster="letusanEfusif">
+              <h3>Letusan Efusif</h3>
+              <p>Letusan yang relatif tenang dengan aliran lava cair yang keluar perlahan. Terjadi ketika magma rendah silika dan gas bisa keluar dengan mudah. Lava bisa mengalir jauh dari kawah. Contoh: Gunung Kilauea di Hawaii.</p>
+            </div>
+            <div class="disaster-card" data-disaster="letusanCampuran">
+              <h3>Letusan Campuran</h3>
+              <p>Gabungan antara letusan eksplosif dan efusif yang terjadi secara bergantian. Gunung bisa mengeluarkan awan panas dan aliran lava dalam waktu berdekatan. Contoh: Gunung Merapi di Indonesia.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="disaster-content">
+          <div class="content-card warning">
+            <h2>⚠️ Tanda-tanda Peringatan</h2>
+            <ul>
+              <li>Peningkatan aktivitas seismik (gempa vulkanik)</li>
+              <li>Perubahan suhu dan kimia air di sekitar gunung</li>
+              <li>Deformasi atau pembengkakan tubuh gunung</li>
+              <li>Peningkatan emisi gas vulkanik</li>
+              <li>Hewan-hewan bermigrasi menjauhi gunung</li>
+              <li>Suara gemuruh dari dalam gunung</li>
+            </ul>
+          </div>
+
+          <div class="content-card info">
+            <h2>📋 Persiapan Sebelum Letusan</h2>
+            <ul>
+              <li>Kenali rute evakuasi dan lokasi pengungsian terdekat</li>
+              <li>Siapkan masker, kacamata pelindung, dan perlengkapan darurat</li>
+              <li>Buat rencana komunikasi keluarga jika terpisah</li>
+              <li>Persiapkan persediaan makanan, air, dan obat-obatan untuk 3-7 hari</li>
+              <li>Lindungi rumah dari abu vulkanik dengan menutup celah-celah</li>
+              <li>Pantau informasi resmi dari PVMBG/BPBD setempat</li>
+            </ul>
+          </div>
+
+          <div class="content-card danger">
+            <h2>🛡️ Yang Harus Dilakukan Saat Letusan</h2>
+            <div class="emergency-steps">
+              <p>Jika terjadi letusan gunung berapi, segera lakukan tindakan berikut sesuai lokasi Anda:</p>
+              <div class="step">
+                <h3>Jika Berada di Kawasan Rawan Bencana:</h3>
+                <ul>
+                  <li>Segera evakuasi ke tempat aman mengikuti rute yang ditentukan</li>
+                  <li>Gunakan masker atau kain basah untuk melindungi pernapasan</li>
+                  <li>Kenakan pakaian tertutup dan kacamata pelindung</li>
+                  <li>Jauhi lembah dan aliran sungai (jalur lahar)</li>
+                  <li>Hindari arah angin yang membawa abu vulkanik</li>
+                </ul>
+              </div>
+              <div class="step">
+                <h3>Jika Terjebak di Luar Ruangan:</h3>
+                <ul>
+                  <li>Cari tempat berlindung yang kokoh</li>
+                  <li>Jika terkena awan panas, segera berbaring di tanah dengan posisi fetal</li>
+                  <li>Hindari jembatan dan bangunan yang bisa runtuh</li>
+                  <li>Jangan mengendarai kendaraan di daerah berabu tebal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card success">
+            <h2>🚑 Setelah Letusan</h2>
+            <ul>
+              <li>Tetap di tempat aman sampai dinyatakan benar-benar aman</li>
+              <li>Hindari daerah yang terkena abu vulkanik tebal</li>
+              <li>Bersihkan atap rumah dari abu vulkanik untuk mencegah runtuh</li>
+              <li>Gunakan masker saat membersihkan abu vulkanik</li>
+              <li>Hindari mengonsumsi air yang terkontaminasi abu</li>
+              <li>Periksa kerusakan rumah sebelum masuk kembali</li>
+              <li>Dengarkan informasi resmi tentang status gunung</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      function goBack() {
+        window.location.href = "../edukasi.html";
+      }
+    </script>
+  </body>
+</html>

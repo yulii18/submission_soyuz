@@ -3,10 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gempa Bumi - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles_edu.css" />
   </head>
   <body>
-    
-    <p>HALOOOOO</p>
+    <header class="header-nav">
+      <h1>Disaster Edu</h1>
+      <nav>
+        <button class="nav-back-btn" onclick="goBack()">
+          <span>Kembali</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <!-- Header Section -->
+        <section class="disaster-header">
+          <div class="disaster-icon">🏠</div>
+          <h1>Gempa Bumi</h1>
+          <p class="disaster-subtitle">Gempa Bumi adalah peristiwa getaran di permukaan bumi akibat pelepasan energi di dalam bumi (biasanya dari patahan/lapisan batuan) karena pergeseran lempeng tektonik. Getaran ini dapat merusak bangunan dan membahayakan keselamatan.</p>
+        </section>
+
+        <section class="disaster-types-container">
+          <div class="education-header">
+            <h2>Jenis Jenis Gempa Bumi</h2>
+          </div>
+          <div class="disaster-types">
+            <div class="disaster-card" data-disaster="gempaTektonik">
+              <h3>Gempa Tektonik</h3>
+              <img src="picture/tektonik.png" alt="Gempa Tektonik" class="item-image">
+              <p>Gempa bumi yang terjadi akibat pergeseran lempeng tektonik di dalam kerak bumi. Prosesnya mirip seperti gelang karet yang ditarik dan tiba-tiba dilepaskan, sehingga menghasilkan getaran yang kuat. Gempa ini paling sering terjadi dan bisa menimbulkan kerusakan besar.</p>
+            </div>
+            <div class="disaster-card" data-disaster="gempaTektonik">
+              <h3>Gempa Vulkanik</h3>
+              <p>Gempa bumi ini disebabkan oleh aktivitas gunung api. Ketika magma (batuan cair panas) bergerak naik ke permukaan, ia menekan dan menggeser batu-batuan di sekitarnya sehingga menyebabkan getaran. Biasanya terjadi menjelang atau saat letusan gunung berapi.</p>
+            </div>
+            <div class="disaster-card" data-disaster="gempaTektonik">
+              <h3>Gempa Induksi</h3>
+              <p>Gempa yang terjadi akibat pelepasan energi dari aktivitas manusia atau peristiwa lain di permukaan bumi, seperti runtuhnya tanah, kegiatan tambang, atau penggunaan bahan peledak. Meski umumnya tidak besar, tetap perlu diwaspadai.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="disaster-content">
+          <div class="content-card">
+          <div class="content-card warning">
+            <h2>⚠️ Tanda-tanda Peringatan</h2>
+            <ul>
+              <li>Getaran kecil yang tidak biasa</li>
+              <li>Hewan berperilaku aneh</li>
+              <li>Perubahan muka air tanah</li>
+              <li>Bunyi gemuruh dari dalam bumi</li>
+            </ul>
+          </div>
+
+          <div class="content-card info">
+            <h2>📋 Persiapan Sebelum Gempa</h2>
+            <ul>
+              <li>Siapkan tas darurat dengan perlengkapan penting</li>
+              <li>Kenali lokasi aman di rumah dan tempat kerja</li>
+              <li>Latih keluarga dengan simulasi gempa</li>
+              <li>Pastikan furniture berat terpasang dengan aman</li>
+              <li>Amankan barang-barang yang berpotensi jatuh dan dapat melukai</li>
+            </ul>
+          </div>
+
+          <div class="content-card danger">
+            <h2>🛡️ Yang Harus Dilakukan Saat Gempa</h2>
+            <div class="emergency-steps">
+              <p>Langkah pertama yang Anda lakukan saat gempa terjadi ialah <strong>DON'T PANIC.</strong> Segera cari perlindungan sesuai kondisi lingkungan tempat Anda berada.</p>
+              <div class="step">
+                <h3>Jika di Dalam Ruangan:</h3>
+                <ul>
+                  <li>Berlindung di bawah meja yang kuat</li>
+                  <li>Lindungi kepala dan leher</li>
+                  <li>Pegang pegangan yang kuat</li>
+                  <li>Berlindung di sudut siku bangunan</li>
+                  <li>Jauhi jendela, cermin, dan benda yang bisa jatuh</li>
+                </ul>
+              </div>
+              <div class="step">
+                <h3>Jika di Luar Ruangan:</h3>
+                <ul>
+                  <li>Jauhi bangunan, pohon, dan tiang listrik</li>
+                  <li>Cari area terbuka yang aman</li>
+                  <li>Jika sedang berkendara, tepi jalan dan matikan mesin</li>
+                  <li>Cari tempat atau dataran tinggi jika berada di daerah pesisir pantai</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card success">
+            <h2>🚑 Setelah Gempa Berhenti</h2>
+            <ul>
+              <li>Periksa diri sendiri dan orang lain apakah ada yang terluka</li>
+              <li>Keluar dari bangunan jika memungkinkan</li>
+              <li>Waspada terhadap gempa susulan</li>
+              <li>Periksa kebocoran gas, air, atau kerusakan listrik</li>
+              <li>Dengarkan informasi dari radio atau sumber terpercaya</li>
+              <li>Jangan masuk ke bangunan yang rusak</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      function goBack() {
+        window.location.href = "../edukasi.html";
+      }
+    </script>
   </body>
 </html>
