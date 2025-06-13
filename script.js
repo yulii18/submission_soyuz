@@ -1,15 +1,5 @@
 // DOM Manipulation and Event Listeners
 document.addEventListener("DOMContentLoaded", function () {
-  // Navigation active class
-  const currentPage = window.location.pathname.split("/").pop();
-  const navLinks = document.querySelectorAll("nav ul li a");
-
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-
   // Home Page Functionality
   const learnMoreBtn = document.getElementById("learnMoreBtn");
   if (learnMoreBtn) {
@@ -17,48 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     learnMoreBtn.addEventListener("click", function () {
       window.location.href = "edukasi.html";
     });
-    // }
-    // if (currentPage === "index.html" || currentPage === "") {
-    //   // Load news dynamically
-    //   const newsContainer = document.getElementById("newsContainer");
-    //   const newsData = [
-    //     {
-    //       title: "Peningkatan Aktivitas Gunung Merapi",
-    //       date: "1 Juni 2025",
-    //       summary: "Status waspada ditingkatkan menjadi siaga.",
-    //     },
-    //     {
-    //       title: "Pelatihan Tanggap Bencana di Jawa Barat",
-    //       date: "28 Mei 2025",
-    //       summary: "Masyarakat dilatih evakuasi mandiri.",
-    //     },
-    //     {
-    //       title: "Sistem Peringatan Dini Tsunami Terbaru",
-    //       date: "20 Mei 2025",
-    //       summary: "Teknologi baru mampu deteksi lebih cepat.",
-    //     },
-    //   ];
-
-    //   newsData.forEach((news) => {
-    //     const newsItem = document.createElement("article");
-    //     newsItem.className = "news-item";
-    //     newsItem.innerHTML = `
-    //               <h3>${news.title}</h3>
-    //               <p class="news-date">${news.date}</p>
-    //               <p>${news.summary}</p>
-    //               <a href="#" class="read-more">Baca selengkapnya</a>
-    //           `;
-    //     newsContainer.appendChild(newsItem);
-    //   });
-
-    // Learn More Button
-    learnMoreBtn.addEventListener("click", function () {
-      window.location.href = "edukasi.html";
-    });
   }
 
   // Education Page Functionality
-  if (currentPage === "edukasi.html") {
+  if (window.location.pathname.endsWith("edukasi.html")) {
     const disasterCards = document.querySelectorAll(".disaster-card");
     const detailTitle = document.getElementById("detailTitle");
     const detailContent = document.getElementById("detailContent");
@@ -78,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Gempa Bumi adalah peristiwa getaran di permukaan bumi akibat pelepasan energi di dalam bumi (biasanya dari patahan/lapisan batuan) karena pergeseran lempeng tektonik. Getaran ini dapat merusak bangunan dan membahayakan keselamatan.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button" onclick="moveToBencanaAlam('gempa_bumi')">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('gempa_bumi')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -91,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Gunung Meletus adalah letusan magma dan abu akibat dorongan gas bertekanan tinggi dari perut bumi yang keluar melalui kawah gunung api. Dapat menimbulkan dampak seperti hujan abu, aliran lava, dan awan panas yang dapat membahayakan manusia dan lingkungan.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('gunung_meletus')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -104,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Angin Topan adalah siklon tropis yang berkecepatan tinggi disertai hujan deras, angin kencang, dan tekanan rendah, mampu menyebabkan kerusakan hebat pada bangunan, infrastruktur, dan pepohonan.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('angin_topan')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -117,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Kekeringan adalah kondisi kekurangan air akibat kemarau berkepanjangan hingga berdampak pada petani, ketersediaan air minum, dan mengancam ekosistem serta mata pencaharian masyarakat, terutama pedesaan.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('kekeringan')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -130,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Tsunami adalah gelombang raksasa di laut akibat gempa bawah laut, letusan gunung api, atau longsor bawah laut. Saat mencapai daratan, gelombang tsunami akan membesar dan menghantam masyarakat pesisir dengan destruktif.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('tsunami')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -143,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Tanah Longsor adalah pergerakan massa tanah/kerikil/gunung yang menuruni lereng dalam jumlah besar secara tiba-tiba atau berangsur-angsur akibat hujan lebat, gempa, atau erosi.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('longsor')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -156,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Banjir adalah meluapnya air sungai, danau, laut, atau saluran ke permukiman melebihi batas normal akibat hujan lebat, meluapnya badan air, atau sungai tersumbat. Banjir dapat merusak rumah, mencemari air bersih, dan menimbulkan risiko kesehatan.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('banjir')">Lihat Detail</button>
                         </div>
                     </li>
                     </ul>
@@ -176,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Kegagalan Teknologi adalah bencana yang timbul akibat kesalahan desain, pengoperasian, kelalaian, atau unsur disengaja dalam penggunaan teknologi atau industri. Meliputi kecelakaan industri (seperti tumpahan bahan kimia, ledakan pabrik), kecelakaan transportasi (di darat, laut, atau udara), hingga kegagalan sistem teknologi lainnya seperti ledakan reaktor atau kebocoran gas</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('kegagalan_teknologi')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -189,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Wabah Penyakit adalah kejadian meningkatnya kasus penyakit menular secara signifikan dalam waktu dan wilayah tertentu. Epidemik menyebar cepat di kota atau provinsi, sedangkan pandemi meluas hingga melintasi negara. Contohnya termasuk flu burung (H5N1), demam berdarah, ebola, dan COVID‑19</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('wabah')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -202,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Kebakaran adalah peristiwa berkobarnya api yang melebihi batas normal yang dapat menimbulkan kerusakan atau kerugian, baik pada bangunan di pemukiman, pabrik, pasar, gedung, maupun kebakaran hutan dan lahan.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('kebakaran')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -215,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Kecelakaan adalah kejadian tak terduga pada moda transportasi atau industri, sering disebabkan oleh kealpaan/kelemahan sistem dan human error yang dapat menyebabkan cedera atau kematian.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('kecelakaan')">Lihat Detail</button>
                         </div>
                     </li>
                     </ul>
@@ -235,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Konflik Sosial adalah peristiwa kekerasan atau ketegangan antar individu, kelompok masyarakat, suku, agama, atau ras yang menimbulkan kerugian besar, baik fisik, psikologis, maupun material.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('konflik_sosial')">Lihat Detail</button>
                         </div>
                     </li>
                      <li>
@@ -248,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Terorisme adalah tindakan kekerasan yang disengaja dan bersifat sistematis, dilakukan oleh kelompok atau individu untuk menciptakan ketakutan (teror) demi tujuan ideologis, politik, atau agama.</p>
                         </div>
                         <div class="disaster-btn">
-                        <button class="button">Lihat Detail</button>
+                        <button class="button" onclick="moveToBencana('terorisme')">Lihat Detail</button>
                         </div>
                     </li>
                     </ul>
@@ -339,6 +291,6 @@ function showDetail(category) {
   document.body.appendChild(modal);
 }
 
-function moveToBencanaAlam(jenisBencana) {
+function moveToBencana(jenisBencana) {
   window.location.href = `bencana/${jenisBencana}.html`;
 }
