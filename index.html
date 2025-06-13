@@ -1,98 +1,162 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disaster Edu - Beranda</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive_style.css">
-    <link rel="stylesheet" href="styles_edu.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive_style.css" />
+    <link rel="stylesheet" href="styles_edu.css" />
+  </head>
+  <body>
     <header class="header-nav">
-        <h1>Disaster Edu</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="edukasi.html">Edukasi</a></li>
-                <li><a href="siaga.html">Siaga</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-            </ul>
-        </nav>
+      <h1>Disaster Edu</h1>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="edukasi.html">Edukasi</a></li>
+          <li><a href="siaga.html">Siaga</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Selamat Datang di Disaster Edu</h2>
-            <p>Website ini hadir untuk membantumu lebih siap menghadapi bencana. Mulai dari mengenali jenis-jenis bencana, tips penyelamatan diri, hingga panduan mempersiapkan tas siaga bencana</p>
-            <button id="learnMoreBtn">Pelajari Lebih Lanjut</button>
-        </section>
+      <section class="hero">
+        <h2>Selamat Datang di Disaster Edu</h2>
+        <p>
+          Website ini hadir untuk membantumu lebih siap menghadapi bencana.
+          Mulai dari mengenali jenis-jenis bencana, tips penyelamatan diri,
+          hingga panduan mempersiapkan tas siaga bencana
+        </p>
+        <button id="learnMoreBtn">Pelajari Lebih Lanjut</button>
+      </section>
 
-        <section class="features">
-            <article>
-                <img src="picture/bencana_dunia.png" alt="Siaga Bencana" class="feature-icon">
-                <h3>Jenis-Jenis Bencana</h3>
-                <p>Pelajari berbagai bencana dan cara menghadapinya secara efektif untuk meningkatkan kesiapsiagaan Anda.</p>
-                <a href="edukasi.html" class="read-more">Pelajari selengkapnya</a>
-            </article>
-            <article>
-                <img src="picture/tas_siaga.png" alt="Siaga Bencana" class="feature-icon">
-                <h3>Tas Siaga Bencana</h3>
-                <p>Kenali apa saja isi tas siaga dan cara menyusunnya dengan benar untuk persiapan darurat yang optimal.</p>
-                <a href="siaga.html" class="read-more">Lihat Apa Saja Isinya</a>
-            </article>
-        </section>
+      <section class="features">
+        <article>
+          <img
+            src="picture/bencana_dunia.png"
+            alt="Siaga Bencana"
+            class="feature-icon"
+          />
+          <h3>Jenis-Jenis Bencana</h3>
+          <p>
+            Pelajari berbagai bencana dan cara menghadapinya secara efektif
+            untuk meningkatkan kesiapsiagaan Anda.
+          </p>
+          <a href="edukasi.html" class="read-more">Pelajari selengkapnya</a>
+        </article>
+        <article>
+          <img
+            src="picture/tas_siaga.png"
+            alt="Siaga Bencana"
+            class="feature-icon"
+          />
+          <h3>Tas Siaga Bencana</h3>
+          <p>
+            Kenali apa saja isi tas siaga dan cara menyusunnya dengan benar
+            untuk persiapan darurat yang optimal.
+          </p>
+          <a href="siaga.html" class="read-more">Lihat Apa Saja Isinya</a>
+        </article>
+      </section>
 
-        <section class="news">
-            <h2>Berita Terkini</h2>
-            <ul class="news-list">
-                <li class="news-item">
-                    <article>
-                        <div class="news-container">
-                            <img src="picture/gempa.webp" alt="Gempa Palu" class="news-image">
-                            <div class="news-content">
-                                <h3>Gempa Hari Ini di Akhir Pekan Minggu 1 Juni 2025 Menggetarkan Palu, Sulteng</h3>
-                                <time datetime="2025-06-02">02 Juni 2025</time>
-                                <p>"Pusat gempa berada di darat 28 kilometer barat daya Palu," papar BMKG dikutip Liputan6.com dari laman resminya.</p>
-                                <a href="https://www.liputan6.com/news/read/6039791/gempa-hari-ini-di-akhir-pekan-minggu-1-juni-2025-menggetarkan-palu-sulteng" target="_blank" class="read-more">Baca selengkapnya</a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li class="news-item">
-                    <article>
-                        <div class="news-container">
-                            <img src="picture/banjir.jpeg" alt="Banjir Palu" class="news-image">
-                            <div class="news-content">
-                                <h3>Banjir Terjang 3 Kecamatan di Palu, 2 Rumah Hanyut</h3>
-                                <time datetime="2025-04-25">25 April 2025</time>
-                                <p>Banjir menerjang 3 kecamatan di Kota Palu, Sulawesi Tengah (Sulteng) usai diguyur hujan dengan intensitas lebat.</p>
-                                <a href="https://www.detik.com/sulsel/berita/d-7886444/banjir-terjang-3-kecamatan-di-palu-2-rumah-hanyut-rs-undata-terdampak" target="_blank" class="read-more">Baca selengkapnya</a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li class="news-item">
-                    <article>
-                        <div class="news-container">
-                            <img src="picture/banjir2.jpg" alt="Banjir" class="news-image">
-                            <div class="news-content">
-                                <h3>BPBD: Enam Desa di Tiga Kabupaten di Sulawesi Tengah Banjir</h3>
-                                <time datetime="2025-02-02">02 Februari 2025</time>
-                                <p>BPBD melaporkan enam desa di Sulawesi Tengah terendam banjir karena intensitas curah hujan tinggi dan naiknya air laut.</p>
-                                <a href="https://www.tempo.co/lingkungan/bpbd-enam-desa-di-tiga-kabupaten-di-sulawesi-tengah-banjir-1201683" target="_blank" class="read-more">Baca selengkapnya</a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-        </section>
+      <section class="news">
+        <h2>Berita Terkini</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <article>
+              <div class="news-container">
+                <img
+                  src="picture/gempa.webp"
+                  alt="Gempa Palu"
+                  class="news-image"
+                />
+                <div class="news-content">
+                  <h3>
+                    Gempa Hari Ini di Akhir Pekan Minggu 1 Juni 2025
+                    Menggetarkan Palu, Sulteng
+                  </h3>
+                  <time datetime="2025-06-02">02 Juni 2025</time>
+                  <p>
+                    "Pusat gempa berada di darat 28 kilometer barat daya Palu,"
+                    papar BMKG dikutip Liputan6.com dari laman resminya.
+                  </p>
+                  <a
+                    href="https://www.liputan6.com/news/read/6039791/gempa-hari-ini-di-akhir-pekan-minggu-1-juni-2025-menggetarkan-palu-sulteng"
+                    target="_blank"
+                    class="read-more"
+                    >Baca selengkapnya</a
+                  >
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="news-item">
+            <article>
+              <div class="news-container">
+                <img
+                  src="picture/banjir.jpeg"
+                  alt="Banjir Palu"
+                  class="news-image"
+                />
+                <div class="news-content">
+                  <h3>Banjir Terjang 3 Kecamatan di Palu, 2 Rumah Hanyut</h3>
+                  <time datetime="2025-04-25">25 April 2025</time>
+                  <p>
+                    Banjir menerjang 3 kecamatan di Kota Palu, Sulawesi Tengah
+                    (Sulteng) usai diguyur hujan dengan intensitas lebat.
+                  </p>
+                  <a
+                    href="https://www.detik.com/sulsel/berita/d-7886444/banjir-terjang-3-kecamatan-di-palu-2-rumah-hanyut-rs-undata-terdampak"
+                    target="_blank"
+                    class="read-more"
+                    >Baca selengkapnya</a
+                  >
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="news-item">
+            <article>
+              <div class="news-container">
+                <img
+                  src="picture/banjir2.jpg"
+                  alt="Banjir"
+                  class="news-image"
+                />
+                <div class="news-content">
+                  <h3>
+                    BPBD: Enam Desa di Tiga Kabupaten di Sulawesi Tengah Banjir
+                  </h3>
+                  <time datetime="2025-02-02">02 Februari 2025</time>
+                  <p>
+                    BPBD melaporkan enam desa di Sulawesi Tengah terendam banjir
+                    karena intensitas curah hujan tinggi dan naiknya air laut.
+                  </p>
+                  <a
+                    href="https://www.tempo.co/lingkungan/bpbd-enam-desa-di-tiga-kabupaten-di-sulawesi-tengah-banjir-1201683"
+                    target="_blank"
+                    class="read-more"
+                    >Baca selengkapnya</a
+                  >
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Disaster Edu. Semua hak dilindungi.</p>
+      <p>&copy; 2025 Disaster Edu. Semua hak dilindungi.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

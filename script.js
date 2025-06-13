@@ -9,6 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
   // Education Page Functionality
   if (window.location.pathname.endsWith("edukasi.html")) {
     const disasterCards = document.querySelectorAll(".disaster-card");
