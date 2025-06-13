@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebakaran - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_edu.css">
+</head>
+<body>
+    <header class="header-nav">
+        <h1>Disaster Edu</h1>
+        <nav>
+            <button class="nav-back-btn" onclick="goBack()">
+                <span>Kembali</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="disaster-header">
+                <div class="disaster-icon">🔥</div>
+                <h1>Kebakaran</h1>
+                <p class="disaster-subtitle">Kebakaran adalah keadaan dimana api tidak terkendali yang dapat menyebabkan kerusakan properti, luka-luka, atau korban jiwa. Dapat terjadi di permukiman, hutan, atau fasilitas industri dengan berbagai penyebab.</p>
+            </section>
+
+            <section class="disaster-types-container">
+                <div class="education-header">
+                    <h2>Jenis Kebakaran</h2>
+                </div>
+                <div class="disaster-types">
+                    <div class="disaster-card">
+                        <h3>Kebakaran Rumah</h3>
+                        <img src="picture/house_fire.png" alt="Kebakaran Rumah" class="item-image">
+                        <p>Terjadi di permukiman akibat korsleting listrik, kompor, atau lilin. Sering menyebabkan korban jiwa karena terjadi tiba-tiba di malam hari.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kebakaran Hutan</h3>
+                        <p>Api yang membakar area hutan dan lahan, sering diperparah oleh cuaca kering. Menyebabkan kabut asap dan kerusakan ekosistem.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kebakaran Industri</h3>
+                        <p>Terjadi di pabrik atau fasilitas penyimpanan bahan berbahaya. Berpotensi menyebabkan ledakan dan penyebaran bahan kimia beracun.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disaster-content">
+                <div class="content-card warning">
+                    <h2>⚠️ Tanda-tanda Peringatan</h2>
+                    <ul>
+                        <li>Bau bahan bakar atau gas yang kuat</li>
+                        <li>Asap atau percikan api</li>
+                        <li>Suhu ruangan meningkat drastis</li>
+                        <li>Listrik yang sering mati-hidup</li>
+                        <li>Peringatan dari detektor asap</li>
+                    </ul>
+                </div>
+
+                <div class="content-card info">
+                    <h2>📋 Pencegahan Kebakaran</h2>
+                    <ul>
+                        <li>Pasang detektor asap dan alat pemadam</li>
+                        <li>Periksa instalasi listrik secara berkala</li>
+                        <li>Jauhkan bahan mudah terbakar dari sumber api</li>
+                        <li>Siapkan rencana evakuasi keluarga</li>
+                        <li>Latihan penggunaan alat pemadam kebakaran</li>
+                    </ul>
+                </div>
+
+                <div class="content-card danger">
+                    <h2>🛡️ Saat Terjadi Kebakaran</h2>
+                    <div class="emergency-steps">
+                        <div class="step">
+                            <h3>Jika Api Kecil:</h3>
+                            <ul>
+                                <li>Coba padamkan dengan alat yang sesuai</li>
+                                <li>Putuskan sumber bahan bakar jika memungkinkan</li>
+                                <li>Hindari membuka jendela yang bisa memperbesar api</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h3>Jika Api Besar:</h3>
+                            <ul>
+                                <li>Segera evakuasi area</li>
+                                <li>Merangkak di bawah asap</li>
+                                <li>Uji pintu dengan punggung tangan sebelum membuka</li>
+                                <li>Gunakan tangga darurat, bukan lift</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card success">
+                    <h2>🚑 Pasca Kebakaran</h2>
+                    <ul>
+                        <li>Jangan masuk bangunan sampai dinyatakan aman</li>
+                        <li>Periksa kerusakan struktural</li>
+                        <li>Dokumentasikan untuk klaim asuransi</li>
+                        <li>Bersihkan residu kebakaran dengan perlindungan</li>
+                        <li>Evaluasi penyebab dan perbaiki sistem pencegahan</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "../edukasi.html";
+        }
+    </script>
+</body>
+</html>

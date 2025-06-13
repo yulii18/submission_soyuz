@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wabah Penyakit - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_edu.css">
+</head>
+<body>
+    <header class="header-nav">
+        <h1>Disaster Edu</h1>
+        <nav>
+            <button class="nav-back-btn" onclick="goBack()">
+                <span>Kembali</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="disaster-header">
+                <div class="disaster-icon">🦠</div>
+                <h1>Wabah Penyakit</h1>
+                <p class="disaster-subtitle">Wabah penyakit adalah peningkatan kasus penyakit menular secara signifikan dalam populasi tertentu. Dapat menyebar melalui kontak manusia, hewan, atau lingkungan dan berpotensi menjadi pandemi jika meluas ke berbagai negara.</p>
+            </section>
+
+            <section class="disaster-types-container">
+                <div class="education-header">
+                    <h2>Jenis Wabah Penyakit</h2>
+                </div>
+                <div class="disaster-types">
+                    <div class="disaster-card">
+                        <h3>Penyakit Pernapasan</h3>
+                        <img src="picture/respiratory.png" alt="Penyakit Pernapasan" class="item-image">
+                        <p>Menular melalui udara seperti COVID-19, influenza, atau tuberkulosis. Gejala umum: demam, batuk, sesak napas.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Penyakit Zoonosis</h3>
+                        <p>Ditularkan dari hewan ke manusia seperti rabies, flu burung, atau Ebola. Sering muncul dari kontak dengan hewan terinfeksi.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Penyakit Waterborne</h3>
+                        <p>Menular melalui air terkontaminasi seperti kolera atau disentri. Berkembang di lingkungan dengan sanitasi buruk.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disaster-content">
+                <div class="content-card warning">
+                    <h2>⚠️ Tanda-tanda Peringatan</h2>
+                    <ul>
+                        <li>Peningkatan kasus penyakit serupa di area tertentu</li>
+                        <li>Gejala tidak biasa pada banyak orang secara bersamaan</li>
+                        <li>Pemberitahuan resmi dari otoritas kesehatan</li>
+                        <li>Kematian hewan tidak wajar di wilayah tertentu</li>
+                        <li>Perubahan pola penyakit musiman</li>
+                    </ul>
+                </div>
+
+                <div class="content-card info">
+                    <h2>📋 Pencegahan Wabah</h2>
+                    <ul>
+                        <li>Jaga kebersihan tangan dan lingkungan</li>
+                        <li>Lakukan vaksinasi sesuai anjuran</li>
+                        <li>Hindari kontak dengan hewan liar</li>
+                        <li>Masak makanan hingga matang</li>
+                        <li>Siapkan persediaan obat dan masker</li>
+                    </ul>
+                </div>
+
+                <div class="content-card danger">
+                    <h2>🛡️ Saat Wabah Terjadi</h2>
+                    <div class="emergency-steps">
+                        <div class="step">
+                            <h3>Untuk Individu:</h3>
+                            <ul>
+                                <li>Ikuti protokol kesehatan resmi</li>
+                                <li>Gunakan masker di tempat umum</li>
+                                <li>Batasi kontak fisik</li>
+                                <li>Pantau gejala kesehatan diri</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h3>Untuk Komunitas:</h3>
+                            <ul>
+                                <li>Tingkatkan surveilans kesehatan</li>
+                                <li>Sediakan fasilitas cuci tangan</li>
+                                <li>Lakukan disinfeksi area publik</li>
+                                <li>Buat sistem pelaporan kasus</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card success">
+                    <h2>🚑 Pemulihan Pasca Wabah</h2>
+                    <ul>
+                        <li>Lakukan pembersihan menyeluruh</li>
+                        <li>Periksa kesehatan rutin</li>
+                        <li>Bangun sistem kewaspadaan dini</li>
+                        <li>Evaluasi respons wabah</li>
+                        <li>Tingkatkan kapasitas fasilitas kesehatan</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "../edukasi.html";
+        }
+    </script>
+</body>
+</html>

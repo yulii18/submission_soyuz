@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegagalan Teknologi - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_edu.css">
+</head>
+<body>
+    <header class="header-nav">
+        <h1>Disaster Edu</h1>
+        <nav>
+            <button class="nav-back-btn" onclick="goBack()">
+                <span>Kembali</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="disaster-header">
+                <div class="disaster-icon">💻</div>
+                <h1>Kegagalan Teknologi</h1>
+                <p class="disaster-subtitle">Kegagalan teknologi adalah gangguan sistem teknologi yang menyebabkan kerusakan, ketidakamanan, atau bahaya bagi manusia dan lingkungan. Dapat berupa blackout listrik, kegagalan sistem transportasi, atau kebocoran data penting.</p>
+            </section>
+
+            <section class="disaster-types-container">
+                <div class="education-header">
+                    <h2>Jenis Kegagalan Teknologi</h2>
+                </div>
+                <div class="disaster-types">
+                    <div class="disaster-card">
+                        <h3>Gangguan Listrik</h3>
+                        <img src="picture/blackout.png" alt="Gangguan Listrik" class="item-image">
+                        <p>Pemadaman listrik skala besar yang mengganggu aktivitas rumah tangga, industri, dan layanan penting seperti rumah sakit dan transportasi.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kegagalan Sistem Transportasi</h3>
+                        <p>Gangguan pada sistem transportasi massal seperti kereta api, pesawat, atau lalu lintas udara yang dapat menyebabkan kecelakaan atau penundaan besar.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kebocoran Data</h3>
+                        <p>Kegagalan sistem keamanan digital yang mengakibatkan penyebaran data sensitif seperti informasi pribadi, finansial, atau rahasia negara.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disaster-content">
+                <div class="content-card warning">
+                    <h2>⚠️ Tanda-tanda Peringatan</h2>
+                    <ul>
+                        <li>Sistem komputer sering crash atau error</li>
+                        <li>Peringatan dari sistem tentang kapasitas yang terlampaui</li>
+                        <li>Performa peralatan menurun drastis</li>
+                        <li>Pemadaman listrik kecil yang berulang</li>
+                        <li>Notifikasi keamanan sistem yang tidak biasa</li>
+                    </ul>
+                </div>
+
+                <div class="content-card info">
+                    <h2>📋 Pencegahan Kegagalan</h2>
+                    <ul>
+                        <li>Lakukan maintenance rutin pada peralatan</li>
+                        <li>Gunakan sistem backup dan redundansi</li>
+                        <li>Update sistem keamanan secara berkala</li>
+                        <li>Siapkan sumber daya alternatif (genset, backup data)</li>
+                        <li>Latih personel untuk situasi darurat</li>
+                    </ul>
+                </div>
+
+                <div class="content-card danger">
+                    <h2>🛡️ Saat Terjadi Kegagalan</h2>
+                    <div class="emergency-steps">
+                        <div class="step">
+                            <h3>Untuk Individu:</h3>
+                            <ul>
+                                <li>Jangan panik dan evaluasi situasi</li>
+                                <li>Gunakan sumber daya alternatif jika ada</li>
+                                <li>Hindari menggunakan peralatan yang mencurigakan</li>
+                                <li>Laporkan ke pihak berwenang</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h3>Untuk Organisasi:</h3>
+                            <ul>
+                                <li>Aktifkan rencana darurat</li>
+                                <li>Isolasi sistem yang bermasalah</li>
+                                <li>Komunikasikan status ke stakeholder</li>
+                                <li>Dokumentasikan proses pemulihan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card success">
+                    <h2>🚑 Pemulihan Pasca Kegagalan</h2>
+                    <ul>
+                        <li>Lakukan analisis akar masalah</li>
+                        <li>Perbaiki sistem secara bertahap</li>
+                        <li>Uji coba sebelum operasi penuh</li>
+                        <li>Perbarui protokol darurat</li>
+                        <li>Beri pelatihan tambahan jika diperlukan</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "../edukasi.html";
+        }
+    </script>
+</body>
+</html>

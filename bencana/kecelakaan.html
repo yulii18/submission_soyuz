@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kecelakaan - Sistem Peringatan Dini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_edu.css">
+</head>
+<body>
+    <header class="header-nav">
+        <h1>Disaster Edu</h1>
+        <nav>
+            <button class="nav-back-btn" onclick="goBack()">
+                <span>Kembali</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="disaster-header">
+                <div class="disaster-icon">🚨</div>
+                <h1>Kecelakaan</h1>
+                <p class="disaster-subtitle">Kecelakaan adalah kejadian tidak terduga yang menyebabkan cedera, kerusakan, atau kerugian. Dapat terjadi di jalan raya, tempat kerja, atau area publik dengan berbagai tingkat keparahan.</p>
+            </section>
+
+            <section class="disaster-types-container">
+                <div class="education-header">
+                    <h2>Jenis Kecelakaan</h2>
+                </div>
+                <div class="disaster-types">
+                    <div class="disaster-card">
+                        <h3>Kecelakaan Lalu Lintas</h3>
+                        <img src="picture/traffic_accident.png" alt="Kecelakaan Lalu Lintas" class="item-image">
+                        <p>Tabrakan atau insiden di jalan raya melibatkan kendaraan bermotor, pejalan kaki, atau pesepeda. Sering disebabkan oleh human error atau kondisi jalan.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kecelakaan Industri</h3>
+                        <p>Terjadi di lingkungan kerja akibat kesalahan prosedur, alat rusak, atau kurangnya pengamanan. Dapat melibatkan mesin berat atau bahan berbahaya.</p>
+                    </div>
+                    <div class="disaster-card">
+                        <h3>Kecelakaan Domestik</h3>
+                        <p>Insiden di rumah seperti terjatuh, keracunan, atau luka bakar. Sering menimpa anak-anak dan lansia karena kurang pengawasan.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disaster-content">
+                <div class="content-card warning">
+                    <h2>⚠️ Faktor Risiko</h2>
+                    <ul>
+                        <li>Kondisi cuaca buruk (hujan, kabut)</li>
+                        <li>Alat atau kendaraan yang tidak layak</li>
+                        <li>Kelelahan atau kurang konsentrasi</li>
+                        <li>Pelanggaran prosedur keselamatan</li>
+                        <li>Lingkungan kerja/rumah yang tidak aman</li>
+                    </ul>
+                </div>
+
+                <div class="content-card info">
+                    <h2>📋 Pencegahan Kecelakaan</h2>
+                    <ul>
+                        <li>Patuhi rambu dan aturan keselamatan</li>
+                        <li>Gunakan alat pelindung diri yang sesuai</li>
+                        <li>Lakukan maintenance rutin peralatan</li>
+                        <li>Hindari mengemudi saat mengantuk</li>
+                        <li>Buat lingkungan rumah aman untuk anak</li>
+                    </ul>
+                </div>
+
+                <div class="content-card danger">
+                    <h2>🛡️ Pertolongan Pertama</h2>
+                    <div class="emergency-steps">
+                        <div class="step">
+                            <h3>Untuk Korban:</h3>
+                            <ul>
+                                <li>Jangan pindahkan korban cedera tulang</li>
+                                <li>Hentikan pendarahan dengan tekanan</li>
+                                <li>Jaga korban tetap hangat dan sadar</li>
+                                <li>Hubungi layanan darurat segera</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h3>Untuk Tempat Kejadian:</h3>
+                            <ul>
+                                <li>Amankan area dari bahaya lanjutan</li>
+                                <li>Tandai lokasi kecelakaan</li>
+                                <li>Dokumentasikan kondisi sebelum dibersihkan</li>
+                                <li>Lapor ke pihak berwenang jika diperlukan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card success">
+                    <h2>🚑 Pemulihan Pasca Kecelakaan</h2>
+                    <ul>
+                        <li>Dapatkan perawatan medis lanjutan</li>
+                        <li>Lakukan rehabilitasi jika diperlukan</li>
+                        <li>Evaluasi penyebab kecelakaan</li>
+                        <li>Perbaiki faktor risiko</li>
+                        <li>Ikuti konseling trauma jika diperlukan</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "../edukasi.html";
+        }
+    </script>
+</body>
+</html>
